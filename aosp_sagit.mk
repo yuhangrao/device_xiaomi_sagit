@@ -36,6 +36,12 @@ $(call inherit-product-if-exists, vendor/apps/MiuiCamera/config.mk)
 # ScreenRecorder
 $(call inherit-product-if-exists, vendor/apps/OPScreenRecord/config.mk)
 
+CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_GAPPS_ARCH := arm64
+TARGET_BOOT_ANIMATION_RES := 1080
+KBUILD_BUILD_USER := verevka
+KBUILD_BUILD_HOST := sagit
+
 PRODUCT_NAME := aosp_sagit
 PRODUCT_DEVICE := sagit
 PRODUCT_BRAND := Xiaomi
